@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 model = pickle.load(open('titanic_knn.pkl', 'rb'))
 
-@app.route('/home')
+@app.route('/')
 def home():
     return render_template('home.html')
 
